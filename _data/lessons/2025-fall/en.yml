@@ -1,0 +1,6 @@
+- { num: '01', path: '/lessons/en/development-environment/', title: 'Development Environment' }
+- { num: '02', path: '/lessons/en/web-basics-diagnosis/', title: 'Web Basics & Diagnosis' }
+- { num: '03', path: '/lessons/en/inspiration-kickoff/', title: 'Inspiration & Kickoff' }
+- { num: '04', path: '/lessons/en/web-analysis/', title: 'Web Analysis' }
+- { num: '05', path: '/lessons/en/js-intro/', title: 'Introduction to JavaScript' }
+- { num: 'B1', path: '/bibliography/en/', title: 'Bibliography' }

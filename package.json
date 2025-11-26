@@ -1,0 +1,24 @@
+{
+	"name": "professor-course-template",
+	"version": "1.0.0",
+	"description": "Professor course template for WEB ATELIER (UDIT)",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "bundle exec jekyll serve --livereload",
+		"build": "bundle exec jekyll build",
+		"gen:redirects": "node scripts/generate-redirects.mjs",
+		"validate:yaml": "find _data -name '*.yml' -exec yaml-lint {} \\;",
+		"validate:students": "find _data/students -name '*.yml' -exec yaml-lint {} \\;"
+	},
+	"devDependencies": {
+		"yaml-lint": "^1.7.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ruvebal/web-atelier-udit.git",
+		"directory": "professor-course-template"
+	},
+	"author": "Rubén Vega Balbás, PhD",
+	"license": "MIT"
+}

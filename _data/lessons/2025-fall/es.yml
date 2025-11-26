@@ -1,0 +1,6 @@
+- { num: '01', path: '/lessons/es/entorno-de-desarrollo/', title: 'Entorno de desarrollo' }
+- { num: '02', path: '/lessons/es/web-basics-diagnosis/', title: 'Fundamentos web: Checklist de diagnóstico' }
+- { num: '03', path: '/lessons/es/inspiration-kickoff/', title: 'Inspiración & Kickoff' }
+- { num: '04', path: '/lessons/es/analisis-web/', title: 'Análisis Web' }
+- { num: '05', path: '/lessons/es/js-intro/', title: 'Introducción a JavaScript' }
+- { num: 'B1', path: '/bibliography/es/', title: 'Bibliografía' }

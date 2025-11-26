@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'es' }}">
+	<head>
+		{% include head.html %} {% comment %} Optional structured data & hreflang {% endcomment %} {% include
+		head-hreflang.html %} {% include head-jsonld.html %}
+	</head>
+	<body>
+		{% include header.html %}
+		<main class="container prose">{{ content }}</main>
+		{% include footer.html %}
+	</body>
+</html>
