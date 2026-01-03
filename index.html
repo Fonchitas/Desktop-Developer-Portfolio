@@ -1,164 +1,155 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Science+Gothic:wght@100..900&family=VT323&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <script src="./assets/js/main.js" defer></script>
-</head>
+		<title>Alfon — Analog Photography Portfolio</title>
+		<meta
+			name="description"
+			content="Plantilla de portfolio para fotografía analógica: proyectos, series, procesos y contacto."
+		/>
+		<meta name="theme-color" content="#0b0b0f" />
 
-<body>
-	<!-- Skip link for accessibility -->
-	<a href="#main" class="skip-link">Skip to main content</a>
+		<!-- Open Graph -->
+		<meta property="og:title" content="Alfon — Analog Photography Portfolio" />
+		<meta
+			property="og:description"
+			content="Plantilla de portfolio para fotografía analógica."
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="" />
 
-	<!-- Navigation -->
-	<nav class="nav">
-		<div class="nav-container">
-			<a href="#" class="nav-logo">Portfolio</a>
-			<ul class="nav-links">
-				<li><a href="#hero">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Alfon — Analog Photography Portfolio" />
+		<meta name="twitter:description" content="Plantilla de portfolio para foto analógica." />
+		<meta name="twitter:image" content="" />
 
-	<main id="main">
-		<!-- Hero Section -->
-		<section id="hero" class="hero">
-			<div class="hero-bg parallax-bg"></div>
-			<div class="hero-content">
-				<h1 class="hero-title animate-on-scroll">Jane Developer</h1>
-				<p class="hero-subtitle animate-on-scroll">Front-End Engineer & UI Designer</p>
-				<a href="#projects" class="btn animate-on-scroll">View My Work</a>
-			</div>
-			<div class="scroll-indicator">
-				<span>Scroll</span>
-				<div class="scroll-arrow"></div>
-			</div>
-		</section>
+		<link rel="stylesheet" href="./assets/css/index.css" />
+	</head>
 
-		<!-- About Section -->
-		<section id="about" class="section about">
-			<div class="container">
-				<h2 class="section-title animate-on-scroll">About Me</h2>
-				<div class="about-grid">
-					<div class="about-text animate-on-scroll">
-						<p>
-							I'm a passionate front-end developer with 5 years of experience
-							building responsive, accessible, and performant web applications.
+	<body>
+		
+		<a class="skip-link" href="#main">Saltar al contenido</a>
+
+		<header class="site-header" id="top">
+			<nav class="nav" aria-label="Navegación principal">
+				<a class="brand" href="#home" aria-label="Ir al inicio">
+					<span class="brand__mark">◼︎</span>
+					<span class="brand__text">ALFON / ANALOG</span>
+				</a>
+
+				<button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+					<span class="sr-only">Abrir menú</span>
+					<span aria-hidden="true">Menu</span>
+				</button>
+
+				<ul class="nav__menu" id="nav-menu">
+					<li><a href="#work">Work</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="main">
+			<section class="hero" id="home" aria-label="Portada">
+				<div class="container hero__inner">
+					<p class="kicker">35mm · medium format · darkroom</p>
+					<h1 class="hero__title">
+						Analog stories<br />
+						shot on film.
+					</h1>
+					<p class="hero__lead">
+						Template para portfolio de fotografía analógica: series, hojas de contacto y fichas
+						de proyecto.
+					</p>
+
+					<div class="hero__cta">
+						<a class="btn" href="#work">Ver series</a>
+						<a class="btn btn--ghost" href="#contact">Contactar</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="work" aria-label="Series y proyectos">
+				<div class="container">
+					<header class="section__header">
+						<h2 class="section__title">Selected series</h2>
+						<p class="section__lead">Hojas de contacto (placeholder) — cámbialas por tus series.</p>
+					</header>
+
+					<div class="grid" role="list">
+						<article class="card" role="listitem">
+							<h3 class="card__title">Light Leaks</h3>
+							<p class="card__meta">ISO 400 · 35mm · 2025</p>
+							<a class="card__link" href="#" aria-label="Abrir serie Light Leaks (placeholder)">Open</a>
+						</article>
+
+						<article class="card" role="listitem">
+							<h3 class="card__title">Concrete Silence</h3>
+							<p class="card__meta">ISO 200 · 120 · 2024</p>
+							<a class="card__link" href="#" aria-label="Abrir serie Concrete Silence (placeholder)">Open</a>
+						</article>
+
+						<article class="card" role="listitem">
+							<h3 class="card__title">Night Studies</h3>
+							<p class="card__meta">ISO 800 · 35mm · 2023</p>
+							<a class="card__link" href="#" aria-label="Abrir serie Night Studies (placeholder)">Open</a>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="about" aria-label="Sobre mí">
+				<div class="container split">
+					<div>
+						<h2 class="section__title">About</h2>
+						<p class="section__lead">
+							Diseñador gráfico y multimedia. Fotografía analógica como investigación visual: luz,
+							textura, ritmo y narrativa.
 						</p>
-						<p>
-							My focus is on creating seamless user experiences through clean code
-							and thoughtful design. I believe in the power of vanilla JavaScript
-							and modern CSS to create stunning interfaces without framework bloat.
-						</p>
 					</div>
-					<div class="skills-grid" data-reveal-stagger>
-						<div class="skill-card">
-							<span class="skill-icon">🎨</span>
-							<h3>CSS/Sass</h3>
-							<div class="skill-bar"><div class="skill-fill" style="--fill: 95%"></div></div>
-						</div>
-						<div class="skill-card">
-							<span class="skill-icon">⚡</span>
-							<h3>JavaScript</h3>
-							<div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div>
-						</div>
-						<div class="skill-card">
-							<span class="skill-icon">📱</span>
-							<h3>Responsive</h3>
-							<div class="skill-bar"><div class="skill-fill" style="--fill: 98%"></div></div>
-						</div>
-						<div class="skill-card">
-							<span class="skill-icon">♿</span>
-							<h3>A11y</h3>
-							<div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
-		<!-- Projects Section -->
-		<section id="projects" class="section projects">
-			<div class="container">
-				<h2 class="section-title animate-on-scroll">Featured Projects</h2>
-				<div class="projects-grid" data-reveal-stagger>
-					<article class="project-card">
-						<div class="project-image">
-							<img src="https://picsum.photos/400/300?random=1" alt="E-commerce Platform" loading="lazy" />
-						</div>
-						<div class="project-content">
-							<h3>E-commerce Platform</h3>
-							<p>A fully responsive online store with cart functionality and payment integration.</p>
-							<div class="project-tags">
-								<span>HTML</span><span>CSS</span><span>JS</span>
-							</div>
-						</div>
-					</article>
-					<article class="project-card">
-						<div class="project-image">
-							<img src="https://picsum.photos/400/300?random=2" alt="Dashboard UI" loading="lazy" />
-						</div>
-						<div class="project-content">
-							<h3>Analytics Dashboard</h3>
-							<p>Real-time data visualization dashboard with dark mode support.</p>
-							<div class="project-tags">
-								<span>CSS Grid</span><span>Charts</span><span>API</span>
-							</div>
-						</div>
-					</article>
-					<article class="project-card">
-						<div class="project-image">
-							<img src="https://picsum.photos/400/300?random=3" alt="Mobile App Landing" loading="lazy" />
-						</div>
-						<div class="project-content">
-							<h3>App Landing Page</h3>
-							<p>Conversion-optimized landing page with scroll animations.</p>
-							<div class="project-tags">
-								<span>Animation</span><span>A/B Test</span><span>SEO</span>
-							</div>
-						</div>
-					</article>
+					<ul class="tags" aria-label="Skills">
+						<li class="tag">Art Direction</li>
+						<li class="tag">Layout</li>
+						<li class="tag">Motion</li>
+						<li class="tag">Retouch</li>
+						<li class="tag">Print</li>
+						<li class="tag">Web</li>
+					</ul>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- Contact Section -->
-		<section id="contact" class="section contact">
-			<div class="container">
-				<h2 class="section-title animate-on-scroll">Get In Touch</h2>
-				<div class="contact-content animate-on-scroll">
-					<p>Interested in working together? Let's talk about your project.</p>
-					<a href="mailto:hello@example.com" class="btn btn-primary">Say Hello</a>
-					<div class="social-links">
-						<a href="#" aria-label="GitHub">GitHub</a>
-						<a href="#" aria-label="LinkedIn">LinkedIn</a>
-						<a href="#" aria-label="Twitter">Twitter</a>
+			<section class="section" id="contact" aria-label="Contacto">
+				<div class="container">
+					<h2 class="section__title">Contact</h2>
+					<p class="section__lead">
+						¿Colaboración, encargo o proyecto? Escríbeme.
+					</p>
+
+					<div class="contact">
+						<a class="btn" href="mailto:hello@example.com">hello@example.com</a>
+						<div class="social">
+							<a href="#" aria-label="Instagram (placeholder)">Instagram</a>
+							<a href="#" aria-label="Behance (placeholder)">Behance</a>
+							<a href="#" aria-label="GitHub (placeholder)">GitHub</a>
+						</div>
 					</div>
 				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer__inner">
+				<p>© <span id="year"></span> Alfon — Analog Portfolio Template</p>
+				<a class="to-top" href="#top">Back to top ↑</a>
 			</div>
-		</section>
-	</main>
+		</footer>
 
-	<!-- Footer -->
-	<footer class="footer">
-		<div class="container">
-			<p>&copy; 2025 Jane Developer. Built with vanilla HTML, CSS & JS.</p>
-			<a href="#hero" class="back-to-top" aria-label="Back to top">↑</a>
-		</div>
-	</footer>
-
-	
-</body>
-
+		<script src="./assets/js/main.js" type="module"></script>
+	</body>
 </html>
