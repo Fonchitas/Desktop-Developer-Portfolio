@@ -1,155 +1,214 @@
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<title>Alfon — Analog Photography Portfolio</title>
-		<meta
-			name="description"
-			content="Plantilla de portfolio para fotografía analógica: proyectos, series, procesos y contacto."
-		/>
-		<meta name="theme-color" content="#0b0b0f" />
+	<title>Analog Photography Portfolio Template</title>
+	<meta name="description" content="Template de portfolio para fotografía analógica con home navegable en 2D y secciones en scroll." />
+	<meta name="theme-color" content="#0b0b0f" />
 
-		<!-- Open Graph -->
-		<meta property="og:title" content="Alfon — Analog Photography Portfolio" />
-		<meta
-			property="og:description"
-			content="Plantilla de portfolio para fotografía analógica."
-		/>
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="" />
-		<meta property="og:image" content="" />
+	<link rel="stylesheet" href="./assets/css/index.css" />
+</head>
 
-		<!-- Twitter -->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Alfon — Analog Photography Portfolio" />
-		<meta name="twitter:description" content="Plantilla de portfolio para foto analógica." />
-		<meta name="twitter:image" content="" />
+<body class="mode-canvas">
+	<a class="skip-link" href="#scroll-main">Saltar al contenido</a>
 
-		<link rel="stylesheet" href="./assets/css/index.css" />
-	</head>
+	<header class="ui" aria-label="Controles">
+	<div class="ui__left">
+		<a class="ui-btn ui-btn--brand" href="#" id="goHome" aria-label="Volver al inicio">
+			<span class="ui-btn__text">ALEX REYES</span>
+		</a>
 
-	<body>
-		
-		<a class="skip-link" href="#main">Saltar al contenido</a>
+		<button class="ui-btn ui-btn--menu" type="button" id="menuBtn" aria-expanded="false" aria-controls="nav-menu">
+			<span class="ui-btn__text">MENU</span>
+			<span class="ui-btn__icon" aria-hidden="true">≡</span>
+		</button>
 
-		<header class="site-header" id="top">
-			<nav class="nav" aria-label="Navegación principal">
-				<a class="brand" href="#home" aria-label="Ir al inicio">
-					<span class="brand__mark">◼︎</span>
-					<span class="brand__text">ALFON / ANALOG</span>
-				</a>
+		<!-- dropdown -->
+		<div class="dropdown" id="nav-menu" hidden>
+			<a class="dropdown__link" href="#work" data-target="work">Work</a>
+			<a class="dropdown__link" href="#about" data-target="about">About</a>
+			<a class="dropdown__link" href="#contact" data-target="contact">Contact</a>
 
-				<button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
-					<span class="sr-only">Abrir menú</span>
-					<span aria-hidden="true">Menu</span>
-				</button>
+			<hr class="dropdown__hr" />
 
-				<ul class="nav__menu" id="nav-menu">
-					<li><a href="#work">Work</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
+			<button class="dropdown__link dropdown__secondary" type="button" id="backToCanvas">
+				Back to Home
+			</button>
+		</div>
+	</div>
+</header>
 
-		<main id="main">
-			<section class="hero" id="home" aria-label="Portada">
-				<div class="container hero__inner">
-					<p class="kicker">35mm · medium format · darkroom</p>
-					<h1 class="hero__title">
-						Analog stories<br />
-						shot on film.
-					</h1>
-					<p class="hero__lead">
-						Template para portfolio de fotografía analógica: series, hojas de contacto y fichas
-						de proyecto.
-					</p>
 
-					<div class="hero__cta">
-						<a class="btn" href="#work">Ver series</a>
-						<a class="btn btn--ghost" href="#contact">Contactar</a>
-					</div>
-				</div>
-			</section>
 
-			<section class="section" id="work" aria-label="Series y proyectos">
-				<div class="container">
-					<header class="section__header">
-						<h2 class="section__title">Selected series</h2>
-						<p class="section__lead">Hojas de contacto (placeholder) — cámbialas por tus series.</p>
-					</header>
+	<!-- ================= HOME · CANVAS MODE ================= -->
+	<main id="canvas-main" class="viewport">
+		<div id="stage" class="stage">
 
-					<div class="grid" role="list">
-						<article class="card" role="listitem">
-							<h3 class="card__title">Light Leaks</h3>
-							<p class="card__meta">ISO 400 · 35mm · 2025</p>
-							<a class="card__link" href="#" aria-label="Abrir serie Light Leaks (placeholder)">Open</a>
-						</article>
+			<!-- ================= 16 IMÁGENES (ImageKit) ================= -->
 
-						<article class="card" role="listitem">
-							<h3 class="card__title">Concrete Silence</h3>
-							<p class="card__meta">ISO 200 · 120 · 2024</p>
-							<a class="card__link" href="#" aria-label="Abrir serie Concrete Silence (placeholder)">Open</a>
-						</article>
-
-						<article class="card" role="listitem">
-							<h3 class="card__title">Night Studies</h3>
-							<p class="card__meta">ISO 800 · 35mm · 2023</p>
-							<a class="card__link" href="#" aria-label="Abrir serie Night Studies (placeholder)">Open</a>
-						</article>
-					</div>
-				</div>
-			</section>
-
-			<section class="section" id="about" aria-label="Sobre mí">
-				<div class="container split">
-					<div>
-						<h2 class="section__title">About</h2>
-						<p class="section__lead">
-							Diseñador gráfico y multimedia. Fotografía analógica como investigación visual: luz,
-							textura, ritmo y narrativa.
-						</p>
-					</div>
-
-					<ul class="tags" aria-label="Skills">
-						<li class="tag">Art Direction</li>
-						<li class="tag">Layout</li>
-						<li class="tag">Motion</li>
-						<li class="tag">Retouch</li>
-						<li class="tag">Print</li>
-						<li class="tag">Web</li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="section" id="contact" aria-label="Contacto">
-				<div class="container">
-					<h2 class="section__title">Contact</h2>
-					<p class="section__lead">
-						¿Colaboración, encargo o proyecto? Escríbeme.
-					</p>
-
-					<div class="contact">
-						<a class="btn" href="mailto:hello@example.com">hello@example.com</a>
-						<div class="social">
-							<a href="#" aria-label="Instagram (placeholder)">Instagram</a>
-							<a href="#" aria-label="Behance (placeholder)">Behance</a>
-							<a href="#" aria-label="GitHub (placeholder)">GitHub</a>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-
-		<footer class="site-footer">
-			<div class="container footer__inner">
-				<p>© <span id="year"></span> Alfon — Analog Portfolio Template</p>
-				<a class="to-top" href="#top">Back to top ↑</a>
+			<!-- 1 -->
+			<div class="photo photo--1" data-photo>
+				<img
+					src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/Captura%20de%20pantalla%202026-01-07%20a%20las%2012.17.15.png"
+					srcset="
+						https://ik.imagekit.io/k0qx6odcz/tr:w-480,q-80,f-auto/Captura%20de%20pantalla%202026-01-07%20a%20las%2012.17.15.png 480w,
+						https://ik.imagekit.io/k0qx6odcz/tr:w-800,q-80,f-auto/Captura%20de%20pantalla%202026-01-07%20a%20las%2012.17.15.png 800w,
+						https://ik.imagekit.io/k0qx6odcz/tr:w-1200,q-80,f-auto/Captura%20de%20pantalla%202026-01-07%20a%20las%2012.17.15.png 1200w
+					"
+					sizes="(max-width: 768px) 70vw, 360px"
+					alt="Fotografía analógica moderna"
+					loading="lazy"
+					decoding="async"
+				/>
+				<span class="photo__meta">35mm · Color</span>
 			</div>
-		</footer>
 
-		<script src="./assets/js/main.js" type="module"></script>
-	</body>
+			<!-- 2 -->
+			<div class="photo photo--2" data-photo>
+				<img
+					src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/Jake%20Inez.jpeg"
+					srcset="
+						https://ik.imagekit.io/k0qx6odcz/tr:w-480,q-80,f-auto/Jake%20Inez.jpeg 480w,
+						https://ik.imagekit.io/k0qx6odcz/tr:w-800,q-80,f-auto/Jake%20Inez.jpeg 800w,
+						https://ik.imagekit.io/k0qx6odcz/tr:w-1200,q-80,f-auto/Jake%20Inez.jpeg 1200w
+					"
+					sizes="(max-width: 768px) 70vw, 360px"
+					alt="Fotografía analógica moderna"
+					loading="lazy"
+				/>
+				<span class="photo__meta">Portra · 35mm</span>
+			</div>
+
+			<!-- 3 -->
+			<div class="photo photo--3" data-photo>
+				<img
+					src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/Marija%20Mihailova%20Photographer.jpeg"
+					srcset="
+						https://ik.imagekit.io/k0qx6odcz/tr:w-480,q-80,f-auto/Marija%20Mihailova%20Photographer.jpeg 480w,
+						https://ik.imagekit.io/k0qx6odcz/tr:w-800,q-80,f-auto/Marija%20Mihailova%20Photographer.jpeg 800w,
+						https://ik.imagekit.io/k0qx6odcz/tr:w-1200,q-80,f-auto/Marija%20Mihailova%20Photographer.jpeg 1200w
+					"
+					sizes="(max-width: 768px) 70vw, 360px"
+					alt="Fotografía analógica moderna"
+					loading="lazy"
+				/>
+				<span class="photo__meta">120 · Color</span>
+			</div>
+
+			<!-- 4 -->
+			<div class="photo photo--4" data-photo>
+				<img
+					src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/Stories%20in%20the%20Streets%20of%20Barcelona_%20__%20Comment%20_%20PRESET%20_%20and%20I_ll%20dm%20you%20the%20link%20to%20my%20Lightroom%20Presets%20pack%20that%20I%20have%20edited%20all%20my%20photos%20with.jpeg"
+					alt="Fotografía analógica moderna"
+					loading="lazy"
+				/>
+				<span class="photo__meta">Street · Barcelona</span>
+			</div>
+
+			<!-- 5 -->
+			<div class="photo photo--5" data-photo>
+				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(41).jpeg" alt="" loading="lazy" />
+				<span class="photo__meta">C-41 · Modern</span>
+			</div>
+
+			<!-- 6 -->
+			<div class="photo photo--6" data-photo>
+				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(43).jpeg" alt="" loading="lazy" />
+				<span class="photo__meta">BW · Contrast</span>
+			</div>
+
+			<!-- 7 -->
+			<div class="photo photo--7" data-photo>
+				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(42).jpeg" alt="" loading="lazy" />
+				<span class="photo__meta">Neon · ISO 800</span>
+			</div>
+
+			<!-- 8 -->
+			<div class="photo photo--8" data-photo>
+				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/0f32eb16-a974-4f58-b2a3-1bb69b8b58f1.jpeg" alt="" loading="lazy" />
+				<span class="photo__meta">Soft light</span>
+			</div>
+
+			<!-- 9 -->
+			<div class="photo photo--9" data-photo>
+				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(44).jpeg" alt="" loading="lazy" />
+				<span class="photo__meta">Daylight</span>
+			</div>
+
+			<!-- 10 -->
+			<div class="photo photo--10" data-photo>
+				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(38).jpeg" alt="" loading="lazy" />
+				<span class="photo__meta">Clean · Modern</span>
+			</div>
+
+			<!-- 11 -->
+			<div class="photo photo--11" data-photo>
+				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(39).jpeg" alt="" loading="lazy" />
+				<span class="photo__meta">Street · Grain</span>
+			</div>
+
+			<!-- 12 -->
+			<div class="photo photo--12" data-photo>
+				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(45).jpeg" alt="" loading="lazy" />
+				<span class="photo__meta">Warm tones</span>
+			</div>
+
+			<!-- 13 -->
+			<div class="photo photo--13" data-photo>
+				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(40).jpeg" alt="" loading="lazy" />
+				<span class="photo__meta">Portrait · 35mm</span>
+			</div>
+
+			<!-- 14 -->
+			<div class="photo photo--14" data-photo>
+				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(42).jpeg" alt="" loading="lazy" />
+				<span class="photo__meta">Night · Push</span>
+			</div>
+
+			<!-- 15 -->
+			<div class="photo photo--15" data-photo>
+				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/Marija%20Mihailova%20Photographer.jpeg" alt="" loading="lazy" />
+				<span class="photo__meta">Editorial</span>
+			</div>
+
+			<!-- 16 -->
+			<div class="photo photo--16" data-photo>
+				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/Jake%20Inez.jpeg" alt="" loading="lazy" />
+				<span class="photo__meta">Extra frame</span>
+			</div>
+			
+
+		</div>
+	</main>
+
+	<!-- ================= SCROLL MODE ================= -->
+	<main id="scroll-main" class="scroll-main" hidden>
+		<section class="section" id="about">
+			<div class="container">
+				<h2 class="section__title">About</h2>
+				<p class="section__lead">
+					Secciones en scroll normal para contenido editorial, bio y contacto.
+				</p>
+			</div>
+		</section>
+
+		<section class="section" id="work">
+			<div class="container">
+				<h2 class="section__title">Work</h2>
+				<p class="section__lead">Aquí iría el grid de proyectos.</p>
+			</div>
+		</section>
+
+		<section class="section" id="contact">
+			<div class="container">
+				<h2 class="section__title">Contact</h2>
+				<a class="btn" href="mailto:hello@example.com">hello@example.com</a>
+			</div>
+		</section>
+	</main>
+
+	<script src="./assets/js/main.js" type="module"></script>
+</body>
 </html>
