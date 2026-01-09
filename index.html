@@ -1,263 +1,357 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	<title>Analog Photography Portfolio Template</title>
-	<meta name="description" content="Template de portfolio para fotografía analógica con home navegable en 2D y secciones en scroll." />
-	<meta name="theme-color" content="#0b0b0f" />
-
-	<link rel="stylesheet" href="./assets/css/index.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Alex Reyes - Professional Photographer & Designer</title>
+  <meta name="title" content="Alex Reyes - Professional Photographer & Designer">
+  <meta name="description" content="Explore the immersive portfolio of Alex Reyes, a professional photographer and designer specializing in capturing authentic moments and creating visual stories.">
+  <meta name="keywords" content="photography, photographer, portfolio, professional, designer, visual artist, Alex Reyes">
+  <meta name="author" content="Alex Reyes">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourusername.github.io/alex-reyes-portfolio/">
+  <meta property="og:title" content="Alex Reyes - Professional Photographer & Designer">
+  <meta property="og:description" content="Explore the immersive portfolio of Alex Reyes, featuring an innovative infinite world browsing experience.">
+  <meta property="og:image" content="https://yourusername.github.io/alex-reyes-portfolio/assets/images/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yourusername.github.io/alex-reyes-portfolio/">
+  <meta property="twitter:title" content="Alex Reyes - Professional Photographer & Designer">
+  <meta property="twitter:description" content="Explore the immersive portfolio of Alex Reyes, featuring an innovative infinite world browsing experience.">
+  <meta property="twitter:image" content="https://yourusername.github.io/alex-reyes-portfolio/assets/images/twitter-card.jpg">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0a0a0a">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  
+  <!-- Manifest -->
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS (Single Entry Point) -->
+  <link rel="stylesheet" href="assets/css/index.css">
 </head>
-
-<body class="mode-canvas">
-	<a class="skip-link" href="#scroll-main">Saltar al contenido</a>
-
-	<header class="ui" aria-label="Controles">
-	<div class="ui__left">
-		<a class="ui-btn ui-btn--brand" href="#" id="goHome" aria-label="Volver al inicio">
-			<span class="ui-btn__text">ALEX REYES</span>
-		</a>
-
-		<button class="ui-btn ui-btn--menu" type="button" id="menuBtn" aria-expanded="false" aria-controls="nav-menu">
-			<span class="ui-btn__text">MENU</span>
-			<span class="ui-btn__icon" aria-hidden="true">≡</span>
-		</button>
-
-		<!-- dropdown -->
-		<div class="dropdown" id="nav-menu" hidden>
-			<a class="dropdown__link" href="#work" data-target="work">Work</a>
-			<a class="dropdown__link" href="#about" data-target="about">About</a>
-			<a class="dropdown__link" href="#contact" data-target="contact">Contact</a>
-
-			<hr class="dropdown__hr" />
-
-			<button class="dropdown__link dropdown__secondary" type="button" id="backToCanvas">
-				Back to Home
-			</button>
-		</div>
-	</div>
-</header>
-
-
-
-	<!-- ================= HOME · CANVAS MODE ================= -->
-	<main id="canvas-main" class="viewport">
-		<div id="stage" class="stage">
-
-			
-			<!-- 1 -->
-			<div class="photo photo--1" data-photo>
-				<img
-					src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/Captura%20de%20pantalla%202026-01-07%20a%20las%2012.17.15.png"
-
-					sizes="(max-width: 768px) 70vw, 360px"
-					alt="Fotografía analógica moderna"
-					loading="lazy"
-					decoding="async"
-				/>
-				<span class="photo__meta">35mm · Color</span>
-			</div>
-
-			<!-- 2 -->
-			<div class="photo photo--2" data-photo>
-				<img
-					src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/Jake%20Inez.jpeg"
-					
-					sizes="(max-width: 768px) 70vw, 360px"
-					alt="Fotografía analógica moderna"
-					loading="lazy"
-				/>
-				<span class="photo__meta">Portra · 35mm</span>
-			</div>
-
-			<!-- 3 -->
-			<div class="photo photo--3" data-photo>
-				<img
-					src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/Marija%20Mihailova%20Photographer.jpeg"
-					
-					sizes="(max-width: 768px) 70vw, 360px"
-					alt="Fotografía analógica moderna"
-					loading="lazy"
-				/>
-				<span class="photo__meta">120 · Color</span>
-			</div>
-
-			<!-- 4 -->
-			<div class="photo photo--4" data-photo>
-				<img
-					src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/Stories%20in%20the%20Streets%20of%20Barcelona_%20__%20Comment%20_%20PRESET%20_%20and%20I_ll%20dm%20you%20the%20link%20to%20my%20Lightroom%20Presets%20pack%20that%20I%20have%20edited%20all%20my%20photos%20with.jpeg"
-					alt="Fotografía analógica moderna"
-					loading="lazy"
-				/>
-				<span class="photo__meta">Street · Barcelona</span>
-			</div>
-
-			<!-- 5 -->
-			<div class="photo photo--5" data-photo>
-				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(41).jpeg" alt="" loading="lazy" />
-				<span class="photo__meta">C-41 · Modern</span>
-			</div>
-
-			<!-- 6 -->
-			<div class="photo photo--6" data-photo>
-				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(43).jpeg" alt="" loading="lazy" />
-				<span class="photo__meta">BW · Contrast</span>
-			</div>
-
-			<!-- 7 -->
-			<div class="photo photo--7" data-photo>
-				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(42).jpeg" alt="" loading="lazy" />
-				<span class="photo__meta">Neon · ISO 800</span>
-			</div>
-
-			<!-- 8 -->
-			<div class="photo photo--8" data-photo>
-				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/0f32eb16-a974-4f58-b2a3-1bb69b8b58f1.jpeg" alt="" loading="lazy" />
-				<span class="photo__meta">Soft light</span>
-			</div>
-
-			<!-- 9 -->
-			<div class="photo photo--9" data-photo>
-				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(44).jpeg" alt="" loading="lazy" />
-				<span class="photo__meta">Daylight</span>
-			</div>
-
-			<!-- 10 -->
-			<div class="photo photo--10" data-photo>
-				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(38).jpeg" alt="" loading="lazy" />
-				<span class="photo__meta">Clean · Modern</span>
-			</div>
-
-			<!-- 11 -->
-			<div class="photo photo--11" data-photo>
-				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(39).jpeg" alt="" loading="lazy" />
-				<span class="photo__meta">Street · Grain</span>
-			</div>
-
-			<!-- 12 -->
-			<div class="photo photo--12" data-photo>
-				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(45).jpeg" alt="" loading="lazy" />
-				<span class="photo__meta">Warm tones</span>
-			</div>
-
-			<!-- 13 -->
-			<div class="photo photo--13" data-photo>
-				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(40).jpeg" alt="" loading="lazy" />
-				<span class="photo__meta">Portrait · 35mm</span>
-			</div>
-
-			<!-- 14 -->
-			<div class="photo photo--14" data-photo>
-				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(42).jpeg" alt="" loading="lazy" />
-				<span class="photo__meta">Night · Push</span>
-			</div>
-
-			<!-- 15 -->
-			<div class="photo photo--15" data-photo>
-				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/Marija%20Mihailova%20Photographer.jpeg" alt="" loading="lazy" />
-				<span class="photo__meta">Editorial</span>
-			</div>
-
-			<!-- 16 -->
-			<div class="photo photo--16" data-photo>
-				<img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/Jake%20Inez.jpeg" alt="" loading="lazy" />
-				<span class="photo__meta">Extra frame</span>
-			</div>
-	
-
-			<div class="photo photo--24" data-photo>
-  <img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(44).jpeg" alt="Fotografía analógica moderna" loading="lazy">
-  <span class="photo__meta">Extra frame</span>
-</div>
-
-<div class="photo photo--25" data-photo>
-  <img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(41).jpeg" alt="Fotografía analógica moderna" loading="lazy">
-  <span class="photo__meta">Extra frame</span>
-</div>
-
-<div class="photo photo--26" data-photo>
-  <img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(42).jpeg" alt="Fotografía analógica moderna" loading="lazy">
-  <span class="photo__meta">Extra frame</span>
-</div>
-
-<div class="photo photo--27" data-photo>
-  <img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(43).jpeg" alt="Fotografía analógica moderna" loading="lazy">
-  <span class="photo__meta">Extra frame</span>
-</div>
-
-<div class="photo photo--28" data-photo>
-  <img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(45).jpeg" alt="Fotografía analógica moderna" loading="lazy">
-  <span class="photo__meta">Extra frame</span>
-</div>
-
-<div class="photo photo--29" data-photo>
-  <img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(38).jpeg" alt="Fotografía analógica moderna" loading="lazy">
-  <span class="photo__meta">Extra frame</span>
-</div>
-
-<div class="photo photo--30" data-photo>
-  <img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(39).jpeg" alt="Fotografía analógica moderna" loading="lazy">
-  <span class="photo__meta">Extra frame</span>
-</div>
-
-<div class="photo photo--31" data-photo>
-  <img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/_%20(40).jpeg" alt="Fotografía analógica moderna" loading="lazy">
-  <span class="photo__meta">Extra frame</span>
-</div>
-
-<div class="photo photo--32" data-photo>
-  <img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/0f32eb16-a974-4f58-b2a3-1bb69b8b58f1.jpeg" alt="Fotografía analógica moderna" loading="lazy">
-  <span class="photo__meta">Extra frame</span>
-</div>
-
-<div class="photo photo--33" data-photo>
-  <img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/Jake%20Inez.jpeg" alt="Fotografía analógica moderna" loading="lazy">
-  <span class="photo__meta">Extra frame</span>
-</div>
-
-<div class="photo photo--34" data-photo>
-  <img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/Marija%20Mihailova%20Photographer.jpeg" alt="Fotografía analógica moderna" loading="lazy">
-  <span class="photo__meta">Extra frame</span>
-</div>
-
-<div class="photo photo--35" data-photo>
-  <img src="https://ik.imagekit.io/k0qx6odcz/tr:w-900,q-80,f-auto/Martin%20Parr.jpeg" alt="Fotografía analógica moderna" loading="lazy">
-  <span class="photo__meta">Extra frame</span>
-</div>
-
-			
-
-		</div>
-	</main>
-
-	<!-- ================= SCROLL MODE ================= -->
-	<main id="scroll-main" class="scroll-main" hidden>
-		<section class="section" id="about">
-			<div class="container">
-				<h2 class="section__title">About</h2>
-				<p class="section__lead">
-					Secciones en scroll normal para contenido editorial, bio y contacto.
-				</p>
-			</div>
-		</section>
-
-		<section class="section" id="work">
-			<div class="container">
-				<h2 class="section__title">Work</h2>
-				<p class="section__lead">Aquí iría el grid de proyectos.</p>
-			</div>
-		</section>
-
-		<section class="section" id="contact">
-			<div class="container">
-				<h2 class="section__title">Contact</h2>
-				<a class="btn" href="mailto:hello@example.com">hello@example.com</a>
-			</div>
-		</section>
-	</main>
-
-	<script src="./assets/js/main.js" type="module"></script>
+<body>
+  
+  <!-- Skip to Content (Accessibility) -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+  
+  <!-- Fixed Header with Glass Buttons -->
+  <header class="main-header" role="banner">
+    <div class="header-container">
+      <!-- Left: Home Button -->
+      <button class="glass-button" id="homeButton" aria-label="Return to home">
+        <span class="button-text">ALEX REYES</span>
+      </button>
+      
+      <!-- Center Left: Menu Button -->
+      <button class="glass-button" id="menuButton" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="button-text">MENU</span>
+      </button>
+      
+      <!-- Center: Status Badges (Non-interactive) -->
+      <div class="status-badges">
+        <span class="glass badge-item">PROFESSIONAL PHOTOGRAPHER</span>
+        <span class="glass badge-item">DESIGNER</span>
+      </div>
+      
+      <!-- Right: Theme Toggle -->
+      <button class="glass-button theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+        <span class="theme-icon" id="themeIcon">
+          <!-- Moon icon for dark mode, Sun for light mode -->
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </span>
+      </button>
+    </div>
+    
+    <!-- Navigation Menu (Dropdown) -->
+    <nav class="main-menu glass-strong" id="mainMenu" data-state="closed" aria-label="Main navigation">
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a href="#work" class="menu-link">WORK</a>
+        </li>
+        <li class="menu-item">
+          <a href="#about" class="menu-link">ABOUT</a>
+        </li>
+        <li class="menu-item">
+          <a href="#contact" class="menu-link">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Infinite World Container (Hero/Home State) -->
+  <div class="infinite-world-container" id="infiniteWorld" data-state="active">
+    <div class="world-viewport" id="worldViewport">
+      <!-- Image cards will be dynamically generated here -->
+    </div>
+    
+    <!-- Pan Instructions (Fade out after first interaction) -->
+    <div class="pan-instructions glass" id="panInstructions">
+      <p>Drag to explore</p>
+    </div>
+  </div>
+  
+  <!-- Main Content (Scroll Mode Sections) -->
+  <main id="main-content" class="main-content" data-state="hidden">
+    
+    <!-- Work Section -->
+    <section id="work" class="content-section work-section">
+      <div class="container-custom">
+        <h2 class="section-title">Selected Work</h2>
+        <div class="row g-4">
+          <!-- Project Cards (Bootstrap Grid) -->
+            <div class="col-12 col-md-6 col-lg-4">
+            <article class="glass-card project-card" data-project-id="editorial-fashion">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=600&h=800&fit=crop" alt="Fashion Photography" loading="lazy">
+              </div>
+              <div class="project-info">
+                <h3>Editorial Fashion</h3>
+                <p>Spring 2025 Collection</p>
+              </div>
+            </article>
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="glass-card project-card" data-project-id="portrait-series">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=800&fit=crop" alt="Portrait Photography" loading="lazy">
+              </div>
+              <div class="project-info">
+                <h3>Portrait Series</h3>
+                <p>Intimate Character Studies</p>
+              </div>
+            </article>
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="glass-card project-card" data-project-id="concert-photography">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&h=800&fit=crop" alt="Event Photography" loading="lazy">
+              </div>
+              <div class="project-info">
+                <h3>Live Events</h3>
+                <p>Music & Culture Documentation</p>
+              </div>
+            </article>
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="glass-card project-card" data-project-id="product-photography">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=800&fit=crop" alt="Product Photography" loading="lazy">
+              </div>
+              <div class="project-info">
+                <h3>Product Studio</h3>
+                <p>Commercial Photography</p>
+              </div>
+            </article>
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="glass-card project-card" data-project-id="documentary">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1518709414768-a88981a4515d?w=600&h=800&fit=crop" alt="Landscape Photography" loading="lazy">
+              </div>
+              <div class="project-info">
+                <h3>Landscapes</h3>
+                <p>Natural World Exploration</p>
+              </div>
+            </article>
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="glass-card project-card" data-project-id="architecture">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=800&fit=crop" alt="Architectural Photography" loading="lazy">
+              </div>
+              <div class="project-info">
+                <h3>Architecture</h3>
+                <p>Built Environment Studies</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="content-section about-section">
+      <div class="container-custom">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-5">
+            <div class="about-image glass-card">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop" alt="Alex Reyes portrait" loading="lazy">
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="about-content">
+              <h2 class="section-title">About Me</h2>
+              <p class="lead">Professional photographer and designer with over 10 years of experience capturing authentic moments and creating compelling visual narratives.</p>
+              
+              <p>My work spans editorial fashion, intimate portraiture, commercial product photography, and environmental documentation. I believe in the power of imagery to tell stories that transcend language and connect people across cultures.</p>
+              
+              <p>Based between New York and Los Angeles, I collaborate with clients worldwide to create images that resonate and endure.</p>
+              
+              <h3>Expertise</h3>
+              <div class="skills-grid">
+                <span class="glass skill-tag">Editorial Photography</span>
+                <span class="glass skill-tag">Portrait Studio</span>
+                <span class="glass skill-tag">Commercial Work</span>
+                <span class="glass skill-tag">Event Documentation</span>
+                <span class="glass skill-tag">Art Direction</span>
+                <span class="glass skill-tag">Visual Design</span>
+              </div>
+              
+              <h3>Recognition</h3>
+              <ul class="recognition-list">
+                <li>International Photography Awards - Gold Medal (2024)</li>
+                <li>Featured in Vogue, Harper's Bazaar, GQ</li>
+                <li>Sony World Photography Awards - Finalist (2023)</li>
+                <li>PDN 30 New & Emerging Photographers (2022)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="content-section contact-section">
+      <div class="container-custom">
+        <h2 class="section-title text-center">Let's Work Together</h2>
+        <p class="section-subtitle text-center">Have a project in mind? I'd love to hear about it.</p>
+        
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <form class="contact-form glass-card" id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control glass-subtle" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control glass-subtle" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control glass-subtle" id="subject" name="subject" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control glass-subtle" id="message" name="message" rows="5" required></textarea>
+              </div>
+              
+              <button type="submit" class="glass-button btn-submit">Send Message</button>
+            </form>
+            
+            <div class="contact-info">
+              <div class="contact-item">
+                <h4>Email</h4>
+                <a href="mailto:alex.reyes@example.com">alex.reyes@example.com</a>
+              </div>
+              
+              <div class="contact-item">
+                <h4>Social</h4>
+                <div class="social-links">
+                  <a href="https://instagram.com/alexreyes.photo" target="_blank" rel="noopener noreferrer" class="glass-button">Instagram</a>
+                  <a href="https://twitter.com/alexreyes" target="_blank" rel="noopener noreferrer" class="glass-button">Twitter</a>
+                  <a href="https://linkedin.com/in/alexreyes" target="_blank" rel="noopener noreferrer" class="glass-button">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container-custom">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>&copy; 2026 Alex Reyes. All rights reserved.</p>
+        </div>
+        <div class="footer-center">
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-right">
+          <a href="https://github.com/yourusername/alex-reyes-portfolio" target="_blank" rel="noopener noreferrer" class="github-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            View Source
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Image Detail Overlay (Modal) -->
+  <div class="image-detail-overlay glass-overlay" id="imageDetailOverlay" data-visible="false" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+    <div class="detail-container glass-strong">
+      <button class="close-detail glass-button" id="closeDetail" aria-label="Close detail view">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      
+      <div class="detail-content" id="detailContent">
+        <!-- Content will be dynamically inserted -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- GSAP Library -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+  
+  <!-- Bootstrap JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JavaScript (Single Entry Point) -->
+  <script src="assets/js/main.js"></script>
+  
 </body>
 </html>
+

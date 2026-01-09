@@ -1,4 +1,25 @@
-@import "./base.css";
-@import "./layout.css";
-@import "./components.css";
+/* ============================================
+   ALEX REYES PHOTOGRAPHY PORTFOLIO
+   Main CSS Entry Point
+   
+   Architecture:
+   - base.css: Variables, resets, typography, utilities
+   - layout.css: Header, navigation, sections, footer
+   - components.css: Reusable UI components
+   ============================================ */
 
+/* Import Base Styles */
+@import url('base.css');
+
+/* Import Layout Styles */
+@import url('layout.css');
+
+/* Import Component Styles */
+@import url('components.css');
+
+/* ============================================
+   CUSTOM OVERRIDES & PROJECT-SPECIFIC STYLES
+   Add any additional custom styles below
+   ============================================ */
+
+/* Example: Add your custom styles here if needed */
