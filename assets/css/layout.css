@@ -97,7 +97,7 @@ body.mode-scroll{
    ===================================================== */
 .photo{
 	position: absolute;
-	width: min(360px, 62vw);
+	width: min(420px, 62vw);
 	border-radius: 1.15rem;
 	overflow: hidden;
 
@@ -186,69 +186,50 @@ body.is-entering .photo{
 }
 
 /* =====================================================
-   POSICIONES — centradas en el mundo (3200x2400)
-   Centro ≈ (1600,1200)
+   POSICIONES — 23 IMÁGENES GRANDES, MÁS SEPARACIÓN
+   World: 3200 x 2400
+   Fotos ~420px
    ===================================================== */
 
-/* Núcleo central (lo que ves al entrar) */
-.photo--1  { left: 1080px; top: 620px;  }
-.photo--2  { left: 1420px; top: 520px;  }
-.photo--3  { left: 1750px; top: 600px;  }
-.photo--4  { left: 2050px; top: 520px;  }
+/* -------- FILA SUPERIOR -------- */
+.photo--1  { left: 640px;  top: 240px; }
+.photo--2  { left: 1360px; top: 200px; }
+.photo--3  { left: 2080px; top: 240px; }
 
-.photo--5  { left: 1000px; top: 950px;  }
-.photo--6  { left: 1330px; top: 900px;  }
-.photo--7  { left: 1660px; top: 960px;  }
-.photo--8  { left: 1980px; top: 900px;  }
+/* -------- FILA SUPERIOR MEDIA -------- */
+.photo--4  { left: 880px;  top: 640px; }
+.photo--5  { left: 1600px; top: 640px; }
+.photo--6  { left: 2320px; top: 640px; }
 
-.photo--9  { left: 1120px; top: 1270px; }
-.photo--10 { left: 1450px; top: 1310px; }
-.photo--11 { left: 1780px; top: 1330px; }
-.photo--12 { left: 2100px; top: 1260px; }
+/* -------- FILA CENTRAL (hero) -------- */
+.photo--7  { left: 520px;  top: 1040px; }
+.photo--8  { left: 1280px; top: 980px; }
+.photo--9  { left: 2040px; top: 1040px; }
 
-/* Extensión alrededor (pan suave) */
-.photo--13 { left: 2380px; top: 760px;  }
-.photo--14 { left: 2580px; top: 1120px; }
+/* -------- FILA CENTRAL INFERIOR -------- */
+.photo--10 { left: 880px;  top: 1440px; }
+.photo--11 { left: 1600px; top: 1440px; }
+.photo--12 { left: 2320px; top: 1440px; }
 
-.photo--15 { left: 1320px; top: 1660px; }
-.photo--16 { left: 1860px; top: 1740px; }
+/* -------- FILA INFERIOR -------- */
+.photo--13 { left: 640px;  top: 1840px; }
+.photo--14 { left: 1360px; top: 1780px; }
+.photo--15 { left: 2080px; top: 1840px; }
 
-/* Arriba / izquierda */
-.photo--17 { left: 760px;  top: 380px;  }
-.photo--18 { left: 520px;  top: 860px;  }
+/* -------- EXPANSIÓN LATERAL (PAN) -------- */
+.photo--16 { left: 360px;  top: 1760px; }
+.photo--17 { left: 2960px; top: 780px; }
 
-.photo--19 { left: 1680px; top: 290px;  }
-.photo--20 { left: 2280px; top: 360px;  }
+.photo--18 { left: 160px;  top: 1320px; }
+.photo--19 { left: 2960px; top: 1320px; }
 
-.photo--21 { left: 560px;  top: 1220px; }
+/* -------- EXTREMOS -------- */
+.photo--20 { left: 1360px; top: 640px; }
+.photo--21 { left: 40px;   top: 1040px; }
+.photo--22 { left: 3080px; top: 1060px; }
+.photo--23 { left: 1360px; top: 2040px; }
 
-.photo--22 { left: 2320px; top: 1540px; }
-.photo--23 { left: 2620px; top: 1420px; }
 
-/* Rotación suave (solo estética, sin apelotonar) */
-.photo--1  { transform: translateZ(0) rotate(-1deg)  scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--2  { transform: translateZ(0) rotate(.7deg)  scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--3  { transform: translateZ(0) rotate(-.6deg) scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--4  { transform: translateZ(0) rotate(1deg)   scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--5  { transform: translateZ(0) rotate(.5deg)  scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--6  { transform: translateZ(0) rotate(-.8deg) scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--7  { transform: translateZ(0) rotate(1.1deg) scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--8  { transform: translateZ(0) rotate(-.7deg) scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--9  { transform: translateZ(0) rotate(-.4deg) scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--10 { transform: translateZ(0) rotate(.8deg)  scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--11 { transform: translateZ(0) rotate(-1deg)  scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--12 { transform: translateZ(0) rotate(.6deg)  scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--13 { transform: translateZ(0) rotate(-.8deg) scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--14 { transform: translateZ(0) rotate(1.1deg) scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--15 { transform: translateZ(0) rotate(.9deg)  scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--16 { transform: translateZ(0) rotate(-1.2deg)scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--17 { transform: translateZ(0) rotate(-.6deg) scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--18 { transform: translateZ(0) rotate(.6deg)  scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--19 { transform: translateZ(0) rotate(-.4deg) scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--20 { transform: translateZ(0) rotate(.7deg)  scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--21 { transform: translateZ(0) rotate(-.5deg) scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--22 { transform: translateZ(0) rotate(.8deg)  scale(calc(0.98 + var(--focus, 0) * 0.02)); }
-.photo--23 { transform: translateZ(0) rotate(-1deg)  scale(calc(0.98 + var(--focus, 0) * 0.02)); }
 
 /* ====== scroll main ====== */
 .scroll-main{
@@ -264,7 +245,7 @@ body.is-entering .photo{
 .grid{
 	display: grid;
 	gap: 1.5rem;
-	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 /* Reduced motion */
